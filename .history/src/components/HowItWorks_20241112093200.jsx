@@ -31,7 +31,6 @@ const HowItWorks = () => {
     const video = videoRef.current;
 
     const handleIntersection = (entries) => {
-      console.log(entries);
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           video.muted = false; 

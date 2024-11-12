@@ -31,7 +31,6 @@ const HowItWorks = () => {
     const video = videoRef.current;
 
     const handleIntersection = (entries) => {
-      console.log(entries);
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           video.muted = false; 
@@ -82,7 +81,7 @@ const HowItWorks = () => {
               />
             </div>
             <div className="hiw-video relative">
-                <video className="pointer-events-none w-full h-full object-cover" playsInline preload="auto"  autoPlay loop ref={videoRef}>
+                <video className="pointer-events-none w-full h-full object-cover" playsInline preload="none" muted autoPlay loop ref={videoRef}>
                   <source src={frameVideo} type="video/mp4" />
                 </video>
               </div>
