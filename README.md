@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Apple_3D_website
-=======
+
 <div align="center">
   <a href="https://www.linkedin.com/in/sahil-barak-865063216/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
@@ -94,4 +94,5 @@
 ###
 
 <p dir="auto">Open <a href="http://localhost:5173" rel="nofollow">http://localhost:5173</a> in your browser to view the project.</p>
->>>>>>> ea4d169 (first commit)
+
+
