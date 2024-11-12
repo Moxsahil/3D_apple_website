@@ -34,11 +34,10 @@ const HowItWorks = () => {
       
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          video.muted = true;   // Ensure muted is true for autoplay
-          video.play().catch(error => {
-            console.error("Autoplay blocked:", error);
-          });
+          video.muted = false; 
+          video.play();     
         } else {
+          video.muted = true;
           video.pause();       
         }
         console.log(entry.isIntersecting)
