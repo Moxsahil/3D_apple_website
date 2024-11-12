@@ -81,7 +81,7 @@ const HowItWorks = () => {
               />
             </div>
             <div className="hiw-video relative">
-                <video className="pointer-events-none w-full h-full object-cover" playsInline preload="none" muted autoPlay loop ref={videoRef}>
+                <video className="pointer-events-none w-full h-full object-cover" playsInline preload="none"  autoPlay loop ref={videoRef}>
                   <source src={frameVideo} type="video/mp4" />
                 </video>
               </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import { chipImg, frameImg, frameVideo } from '../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
@@ -25,32 +25,6 @@ const HowItWorks = () => {
       duration: 1,
       ease: 'power2.inOut'
     })
-  }, []);
-
-  useEffect(() => {
-    const video = videoRef.current;
-
-    const handleIntersection = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          video.muted = false; 
-          video.play();     
-        } else {
-          video.muted = true;
-          video.pause();       
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5 // Trigger when 50% of the video is in view
-    });
-
-    if (video) observer.observe(video); 
-
-    return () => {
-      if (video) observer.unobserve(video); 
-    };
   }, []);
 
   return (
@@ -80,13 +54,13 @@ const HowItWorks = () => {
                 className="bg-transparent relative z-10"
               />
             </div>
-            <div className="hiw-video relative">
-                <video className="pointer-events-none w-full h-full object-cover" playsInline preload="none" muted autoPlay loop ref={videoRef}>
+            <div className="hiw-video">
+                <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
                   <source src={frameVideo} type="video/mp4" />
                 </video>
               </div>
           </div>
-          <p className="text-gray font-semibold text-center mt-3">COD WARZONE MOBILE</p>
+          <p className="text-gray font-semibold text-center mt-3">Honkai: Star Rail</p>
           </div>
 
           <div className="hiw-text-container">
