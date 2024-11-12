@@ -15,9 +15,7 @@ const Navbar = () => {
     <header className='w-full py-5 sm:px-10 px-5 flex justify-between items-center'>
       <nav className='flex w-full screen-max-width'>
         <a href='/' className="cursor-pointer">
-        <img src={appleImg} alt="Apple" width={14} height={18}
-        className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
-        />
+        <img src={appleImg} alt="Apple" width={14} height={18}/>
         </a>
 
         <div className ='flex flex-1 justify-center '>
