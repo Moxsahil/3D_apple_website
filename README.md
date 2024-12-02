@@ -59,7 +59,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/Moxsahil/3D_apple_website.git
-cd MOX_WORLD
+cd 3D_apple_website
 ```
 
 **Installation**
