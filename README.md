@@ -58,7 +58,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/Moxsahil/MOX_WORLD.git
+git clone https://github.com/Moxsahil/3D_apple_website.git
 cd MOX_WORLD
 ```
 
